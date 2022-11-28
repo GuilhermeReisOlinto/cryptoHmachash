@@ -4,6 +4,7 @@ import { AuthCryptoController } from './auth-crypto.controller';
 
 @Module({
   providers: [AuthCryptoService],
-  controllers: [AuthCryptoController]
+  controllers: [AuthCryptoController],
+  exports: [AuthCryptoService]
 })
 export class AuthCryptoModule {}
